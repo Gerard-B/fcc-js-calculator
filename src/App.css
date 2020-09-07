@@ -1,0 +1,173 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* next lines are in order to not be able to highlight / drag anything, for better UX */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+
+@font-face {
+  font-family: 'Digital Counter 7';
+  src: url('DigitalCounter7.woff2') format('woff2'),
+      url('DigitalCounter7.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* old background: background: linear-gradient(to right, #dff9fb, #95afc0); */
+ /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+51,28343b+100 */
+background: rgb(181,189,200); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(181,189,200,1) 0%, rgba(130,140,149,1) 51%, rgba(40,52,59,1) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 51%,rgba(40,52,59,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 51%,rgba(40,52,59,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#title {
+  font-family: "Krona One", sans-serif;
+  font-size: 12px;
+  justify-items: center;
+  align-items: center;
+  color: whitesmoke;
+}
+
+.calculator {
+  background-color: #535c68;
+  box-shadow: 40px 30px 100px black;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 525px;
+  max-height: auto;
+  width: 305px;
+  border-radius: 10px;
+  padding: 8px 15px 15px 15px;
+}
+
+#screen {
+  border-radius: 8px;
+  /* old color: background-color: #130f40; */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4f4f4f+0,0e0e0e+96 */
+background: rgb(79,79,79); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(79,79,79,1) 0%, rgba(14,14,14,1) 96%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(79,79,79,1) 0%,rgba(14,14,14,1) 96%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(79,79,79,1) 0%,rgba(14,14,14,1) 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f4f4f', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 */
+  /* old font: font-family: "Share Tech Mono", monospace; */
+  font-family: "Digital Counter 7", monospace;
+  text-align: right;
+  width: 95%;
+  min-height: 125px;
+  max-height: auto;
+  position: relative;
+  margin-bottom:10px;
+}
+#previousOperands {
+  margin: 3% 4% 3% 3%;
+  position: relative;
+  word-wrap: break-word;
+  color: #eb4d4b;
+  font-size: 20px;
+}
+
+/* Tried to use conditional CSS or at least target the "state"
+$evaluated{
+  color: green;
+} */
+
+#display {
+  font-size: 35px;
+  position: relative;
+  color: whitesmoke;
+  word-wrap: break-word;
+  margin: 1% 3% 3% 3%;
+}
+
+button {
+  font-family: "Space Mono", monospace;
+  border-radius: 30%;
+  font-size: 33px;
+  height: 60px;
+  width: 60px;
+  margin: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+button.big-horizontal {
+  width: 130px;
+  font-size: 30px;
+  border-radius: 20px;
+  background-color: grey;
+}
+
+#equals {
+  background-color: #6ab04c;
+  color: white;
+}
+#github-logo {
+  width: 80px;
+  vertical-align: -4px;
+}
+
+button:hover {
+  opacity: 0.6;
+}
+
+button:active {
+  transform: scale(0.85);
+}
+
+.number {
+  background-color: #4d524b;
+  color: whitesmoke;
+}
+
+.operation {
+  background-color: whitesmoke;
+  color: #4d524b;
+}
+
+.numbers-container {
+  width: 75%;
+}
+.operations-container {
+  width: 25%;
+}
+
+.clear-items {
+  background-color: #f0932b;
+  color: whitesmoke;
+}
+
+.text-dark {
+  background-color: #535c68;
+  color: whitesmoke;
+  box-shadow: 40px 30px 100px black;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-top: 35px;
+  border-radius: 10px;
+  width: 130px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-decoration: none;
+}
