@@ -2,7 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  /* next lines are in order to not be able to highlight / drag anything, for better UX */
+  /* next lines are in order to not be able to highlight / drag / select anything, for better UX */
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
   -khtml-user-select: none; /* Konqueror HTML */
@@ -42,11 +42,11 @@ min-height: 100vh;
   font-size: 12px;
   justify-items: center;
   align-items: center;
-  color: whitesmoke;
+  color: whitesmoke; 
 }
 
 .calculator {
-  background-color: #535c68;
+  background: linear-gradient(to right, #758192, #535c68);
   box-shadow: 40px 30px 100px black;
   display: flex;
   flex-wrap: wrap;
@@ -55,8 +55,9 @@ min-height: 100vh;
   min-height: 525px;
   max-height: auto;
   width: 305px;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 8px 15px 15px 15px;
+  border: solid 0.1px black;
 }
 
 #screen {
@@ -76,6 +77,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f4f4f', end
   max-height: auto;
   position: relative;
   margin-bottom:10px;
+  box-shadow: inset 2px 2px 5px
+
 }
 #previousOperands {
   margin: 3% 4% 3% 3%;
@@ -100,8 +103,11 @@ $evaluated{
 
 button {
   font-family: "Space Mono", monospace;
-  border-radius: 30%;
   font-size: 33px;
+  /* previous:   border-radius: 8px 8px 8px 8px;*/
+  border-radius: 25%; 
+  border: solid 1px black;
+  box-shadow: inset 2px 3px 10px rgba(145, 145, 145, 0.7), 2px 2px 3px black;
   height: 60px;
   width: 60px;
   margin: 4px;
@@ -109,38 +115,43 @@ button {
   outline: none;
 }
 
+
 button.big-horizontal {
-  width: 130px;
-  font-size: 30px;
-  border-radius: 20px;
-  background-color: grey;
+  width: 125px;
+  background: linear-gradient(to right, rgb(65, 65, 65), rgb(35, 35, 35));
+  border-radius: 8px 8px 8px 8px;
+  border: solid 1px black;
+  box-shadow: inset 2px 3px 10px rgba(145, 145, 145, 0.7), 2px 2px 3px black;
 }
 
-#equals {
-  background-color: #6ab04c;
-  color: white;
-}
-#github-logo {
-  width: 80px;
-  vertical-align: -4px;
-}
-
-button:hover {
-  opacity: 0.6;
+button:hover{
+  box-shadow: inset 2px 3px 8px rgba(255, 255, 255, 0.5), 2px 2px 5px transparent;
+  border: solid 1px black;
+  opacity: 0.75;
 }
 
 button:active {
   transform: scale(0.85);
 }
 
+#equals {
+  background: linear-gradient(to right, #6ab04c, #4d8137);
+  color: whitesmoke;
+}
+#github-logo {
+  width: 80px;
+  vertical-align: -4px;
+}
+
+
+
 .number {
-  background-color: #4d524b;
+  background: linear-gradient(to right, rgb(65, 65, 65), rgb(35, 35, 35));
   color: whitesmoke;
 }
 
 .operation {
-  background-color: whitesmoke;
-  color: #4d524b;
+  background: linear-gradient(to right, white, rgb(180, 180, 180));
 }
 
 .numbers-container {
@@ -151,7 +162,7 @@ button:active {
 }
 
 .clear-items {
-  background-color: #f0932b;
+  background: linear-gradient(to right, #f0932b, #b36e1f) ;
   color: whitesmoke;
 }
 
@@ -170,4 +181,13 @@ button:active {
   margin-right: auto;
   text-align: center;
   text-decoration: none;
+}
+
+#unused-digits {
+  position: absolute;
+  top: 1px;
+  color: dimgrey;
+  opacity: 0.1;
+  text-align: right;
+  box-shadow: inset 8px 8px 30px 8px rgba(0, 0, 0, .25);
 }

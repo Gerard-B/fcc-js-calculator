@@ -2,7 +2,6 @@ import React from "react";
 import "./App.css";
 import GitHub_Logo_White from "./GitHub_Logo_White.png";
 
-
 // I want to get rid of the map-method and especially the unnecessary extra const "ids",
 // since it can be merged with "numbers". I want to use this method: https://stackoverflow.com/questions/14810506/map-function-for-objects-instead-of-arrays
 const numbers = [7, 8, 9, 4, 5, 6, 1, 2, 3, 0];
@@ -112,16 +111,21 @@ class Calculator extends React.Component {
       }
 
       // This is how the calculations are actually done:
-      // there is a prettier method by "Web Dev Simplified", which doesn't depend on "eval"
+      // I followed a 3hour tutorial by Florin Pop, and massively adapted/improved most components, but not the below part.
+      // The below calculations are still a mess, and hard to adapt/improve since it is full of caveats.
+      // There is a prettier method by "Web Dev Simplified", which doesn't depend on "eval"
       default: {
-        let computation
+        let computation;
         if (ops.includes(innerText)) {
           if (ops.includes(lastPressed) && innerText !== "-") {
             const convertCalc = calc
               .split("")
               .reverse()
-              .findIndex((character) => character !== " " && numbers.includes(+character));
-              computation = calc.slice(0, calc.length - convertCalc) + ` ${innerText} `;
+              .findIndex(
+                (character) => character !== " " && numbers.includes(+character)
+              );
+            computation =
+              calc.slice(0, calc.length - convertCalc) + ` ${innerText} `;
           } else {
             computation = `${calc} ${innerText} `;
           }
@@ -146,6 +150,7 @@ class Calculator extends React.Component {
         <div className="calculator">
           <h1 id="title"> JS CALCULATOR WITH REACT </h1>
 
+          {/* Want to maka a "unused-digits display", in which you see the "88888" of a calculator, css is already there */}
           <div id="screen">
             <div id="previousOperands">
               {evaluated} {equalsign}
