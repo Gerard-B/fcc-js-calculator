@@ -150,7 +150,7 @@ class Calculator extends React.Component {
         <div className="calculator">
           <h1 id="title"> JS CALCULATOR WITH REACT </h1>
 
-          {/* Want to maka a "unused-digits display", in which you see the "88888" of a calculator, css is already there */}
+          {/* Want to make a "unused-digits display", in which you see the "88888" of a calculator, css is already there */}
           <div id="screen">
             <div id="previousOperands">
               {evaluated} {equalsign}

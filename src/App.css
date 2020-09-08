@@ -140,8 +140,8 @@ button {
   font-size: 33px;
   /* previous:   border-radius: 8px 8px 8px 8px;*/
   border-radius: 25%;
-  border: solid 0.5px black;
-  box-shadow: inset 2px 3px 10px rgba(145, 145, 145, 0.7), 1px 1px 1.5px black;
+  border: none;
+  box-shadow: inset 2px 3px 10px rgba(145, 145, 145, 0.7), 2px 2px 1.5px black;
   height: 60px;
   width: 60px;
   margin: 4px;
@@ -153,12 +153,12 @@ button.big-horizontal {
   width: 125px;
   background: linear-gradient(to right, rgb(65, 65, 65), rgb(35, 35, 35));
   border-radius: 8px 8px 8px 8px;
-  border: solid 1px black;
+  border: none;
   box-shadow: inset 2px 3px 10px rgba(145, 145, 145, 0.7), 2px 2px 3px black;
 }
 
 button:hover {
-  box-shadow: inset 2px 3px 8px rgba(255, 255, 255, 0.5),
+  box-shadow: inset 2px 3px 8px rgba(120, 120, 120, 0.5),
     2px 2px 5px transparent;
   border: solid 1px black;
   opacity: 0.75;
