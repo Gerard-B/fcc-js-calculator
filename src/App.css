@@ -13,9 +13,9 @@
 }
 
 @font-face {
-  font-family: 'Digital Counter 7';
-  src: url('DigitalCounter7.woff2') format('woff2'),
-      url('DigitalCounter7.woff') format('woff');
+  font-family: "Digital Counter 7";
+  src: url("DigitalCounter7.woff2") format("woff2"),
+    url("DigitalCounter7.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -25,13 +25,30 @@ body {
   margin: 0;
   padding: 0;
   /* old background: background: linear-gradient(to right, #dff9fb, #95afc0); */
- /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+51,28343b+100 */
-background: rgb(181,189,200); /* Old browsers */
-background: -moz-radial-gradient(center, ellipse cover,  rgba(181,189,200,1) 0%, rgba(130,140,149,1) 51%, rgba(40,52,59,1) 100%); /* FF3.6-15 */
-background: -webkit-radial-gradient(center, ellipse cover,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 51%,rgba(40,52,59,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: radial-gradient(ellipse at center,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 51%,rgba(40,52,59,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-min-height: 100vh;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+51,28343b+100 */
+  background: rgb(181, 189, 200); /* Old browsers */
+  background: -moz-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(181, 189, 200, 1) 0%,
+    rgba(130, 140, 149, 1) 51%,
+    rgba(40, 52, 59, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(181, 189, 200, 1) 0%,
+    rgba(130, 140, 149, 1) 51%,
+    rgba(40, 52, 59, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(
+    ellipse at center,
+    rgba(181, 189, 200, 1) 0%,
+    rgba(130, 140, 149, 1) 51%,
+    rgba(40, 52, 59, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,11 +59,17 @@ min-height: 100vh;
   font-size: 12px;
   justify-items: center;
   align-items: center;
-  color: whitesmoke; 
+  color: whitesmoke;
 }
 
 .calculator {
-  background: linear-gradient(to right, #758192, #535c68);
+  /* previous: background: linear-gradient(to right, #677281, #535c68); */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#606c88+14,3f4c6b+66 */
+background: rgb(96,108,136); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(96,108,136,1) 14%, rgba(63,76,107,1) 66%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(96,108,136,1) 14%,rgba(63,76,107,1) 66%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(96,108,136,1) 14%,rgba(63,76,107,1) 66%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606c88', endColorstr='#3f4c6b',GradientType=1 ); /* IE6-9 */
   box-shadow: 40px 30px 100px black;
   display: flex;
   flex-wrap: wrap;
@@ -64,11 +87,23 @@ min-height: 100vh;
   border-radius: 8px;
   /* old color: background-color: #130f40; */
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4f4f4f+0,0e0e0e+96 */
-background: rgb(79,79,79); /* Old browsers */
-background: -moz-linear-gradient(left,  rgba(79,79,79,1) 0%, rgba(14,14,14,1) 96%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left,  rgba(79,79,79,1) 0%,rgba(14,14,14,1) 96%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right,  rgba(79,79,79,1) 0%,rgba(14,14,14,1) 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f4f4f', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 */
+  background: rgb(79, 79, 79); /* Old browsers */
+  background: -moz-linear-gradient(
+    left,
+    rgba(79, 79, 79, 1) 0%,
+    rgba(14, 14, 14, 1) 96%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(79, 79, 79, 1) 0%,
+    rgba(14, 14, 14, 1) 96%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(79, 79, 79, 1) 0%,
+    rgba(14, 14, 14, 1) 96%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f4f4f', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 */
   /* old font: font-family: "Share Tech Mono", monospace; */
   font-family: "Digital Counter 7", monospace;
   text-align: right;
@@ -76,9 +111,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f4f4f', end
   min-height: 125px;
   max-height: auto;
   position: relative;
-  margin-bottom:10px;
-  box-shadow: inset 2px 2px 5px
-
+  margin-bottom: 10px;
+  box-shadow: inset 2px 2px 5px;
 }
 #previousOperands {
   margin: 3% 4% 3% 3%;
@@ -105,16 +139,15 @@ button {
   font-family: "Space Mono", monospace;
   font-size: 33px;
   /* previous:   border-radius: 8px 8px 8px 8px;*/
-  border-radius: 25%; 
-  border: solid 1px black;
-  box-shadow: inset 2px 3px 10px rgba(145, 145, 145, 0.7), 2px 2px 3px black;
+  border-radius: 25%;
+  border: solid 0.5px black;
+  box-shadow: inset 2px 3px 10px rgba(145, 145, 145, 0.7), 1px 1px 1.5px black;
   height: 60px;
   width: 60px;
   margin: 4px;
   cursor: pointer;
   outline: none;
 }
-
 
 button.big-horizontal {
   width: 125px;
@@ -124,8 +157,9 @@ button.big-horizontal {
   box-shadow: inset 2px 3px 10px rgba(145, 145, 145, 0.7), 2px 2px 3px black;
 }
 
-button:hover{
-  box-shadow: inset 2px 3px 8px rgba(255, 255, 255, 0.5), 2px 2px 5px transparent;
+button:hover {
+  box-shadow: inset 2px 3px 8px rgba(255, 255, 255, 0.5),
+    2px 2px 5px transparent;
   border: solid 1px black;
   opacity: 0.75;
 }
@@ -142,8 +176,6 @@ button:active {
   width: 80px;
   vertical-align: -4px;
 }
-
-
 
 .number {
   background: linear-gradient(to right, rgb(65, 65, 65), rgb(35, 35, 35));
@@ -162,7 +194,7 @@ button:active {
 }
 
 .clear-items {
-  background: linear-gradient(to right, #f0932b, #b36e1f) ;
+  background: linear-gradient(to right, #f0932b, #a1631b);
   color: whitesmoke;
 }
 
@@ -189,5 +221,5 @@ button:active {
   color: dimgrey;
   opacity: 0.1;
   text-align: right;
-  box-shadow: inset 8px 8px 30px 8px rgba(0, 0, 0, .25);
+  box-shadow: inset 8px 8px 30px 8px rgba(0, 0, 0, 0.25);
 }
