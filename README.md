@@ -1,7 +1,7 @@
 ## Welcome to my React Calculator for freeCodeCamp
 
 <br>
-#### To see the Calculator live, click **[here](https://gerard-b.github.io/fcc-js-calculator/)**!
+#### To see the Calculator live, click ** [here](https://gerard-b.github.io/fcc-js-calculator/)**!
 <br>
 
 I made this calculator with predominately [React](https://reactjs.org/) as [project #4](https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-javascript-calculator) of the Front End Libraries, part of the [FreeCodeCamp](https://www.freecodecamp.org/) curriculum.
