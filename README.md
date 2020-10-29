@@ -1,6 +1,5 @@
 ## Welcome to my React Calculator for freeCodeCamp
 <br>
-
 #### To see the Calculator live, click **[here](https://gerard-b.github.io/fcc-js-calculator/)**!
 <br>
 
