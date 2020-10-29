@@ -11,7 +11,7 @@ I made this calculator with predominately [React](https://reactjs.org/) as [proj
 - _I could spend more time to make the "feel" of the calculator more realistic, via extra shades, shadows, depth and possibly even audio whenever clicking a button._
 - _I saw an interesting example where the creator added a small-solar panel. When you drag your mouse above it, the display fades (because it would in real-life get less energy)_
 - _Possibly I can add functionality that you don't need the mouse to click buttons, but you can use the keys on the keyboard._
-- _Most importantly, I should consider rewriting part of the "calculation-engine". I saw an amazing method and I re-used this, instead of fully creating it myself._
+- _Most importantly, I should consider rewriting part of the "calculation-engine". I saw an amazing method and I re-used this, instead of fully creating it myself. More specifically: it is the "computation"-part. Where the logic is not mine, but I did customize it a lot later so except for the calculation-method itself, lessons have been learned and I did not easily brush past it (at all). _
 - _My code is not dense enough. The densest and prettiest method I found was in a YouTube-clip by "Web Dev Simplified". But there was no option to re-use his code because it was so dense that I wouldn't be able to use my own creativity to at least learn something from it._
 
 
